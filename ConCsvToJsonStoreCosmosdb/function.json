@@ -1,0 +1,21 @@
+{
+    "bindings": [
+      {
+        "name": "myBlob",
+        "type": "blobTrigger",
+        "direction": "in",
+        "path": "costmgmt/{name}",
+        "connection": "AzureWebJobsStorage"
+      },
+      {
+        "name": "relatedItems",
+        "type": "cosmosDB",
+        "databaseName": "azcostdb",
+        "collectionName": "costdata",
+        "createIfNotExists": true,
+        "ConnectionStringSetting": "MyAccount_COSMOSDB",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+}

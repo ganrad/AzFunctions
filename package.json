@@ -1,0 +1,14 @@
+{
+  "name": "parse-cmdata-upload-cosmosdb",
+  "version": "1.0.0",
+  "description": "Parse billing data in CSV from Storage blobs, transform data and save in CosmosDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "Ganesh Radhakrishnan",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
